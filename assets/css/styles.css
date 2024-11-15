@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2ac9bf;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/*========== common ==========  */
+a {
+    text-decoration: none;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 186px;
+    padding: 15px 16px;
+    background: var(--primary-color);
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+/* ========== Header ========== */
+.header {
+    background: #fff;
+    height: 100vh;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+    z-index: 1;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding-top: 52px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    margin-left: 215px;
+}
+
+.nav ul a {
+    padding: 8px 20px; /* tăng vùng bấm */
+    font-size: 1.6rem;
+    color: #2f3a3b;
+    font-weight: 400;
+}
+
+.nav a:hover,
+.nav li.active a {
+    font-weight: 600;
+    color: #2f3a3b;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header .actions {
+    margin-left: auto;
+}
+
+.header .action-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #494949;
+}
+
+.header .sign-up-btn {
+    margin-left: 24px;
+    min-width: 108px;
+    padding: 15px 16px;
+    border-radius: 6px;
+    border: 1px solid #1ebfc1;
+    background: #fff;
+    color: #1ebfc1;
+}
+
+.header .sign-up-btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
