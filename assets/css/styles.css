@@ -172,6 +172,7 @@ a {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.78; /* 177.778% */
+    max-width: 385px;
 }
 
 .hero .cta-group {
@@ -371,4 +372,116 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.69; /* 168.75% */
+}
+
+/*========== Popular ==========  */
+.popular {
+    margin-top: 51px;
+    padding: 49px 0;
+}
+
+.popular-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.popular .popular-top .desc {
+    margin-top: 19px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78;
+    max-width: 525px;
+}
+
+.popular .view-all {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+.popular .course-list {
+    margin-top: 79px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 47px;
+}
+
+.popular .course-item {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: visible;
+}
+
+.popular .course-item .thumb {
+    width: calc(100% + 2px);
+    height: 393px;
+    object-fit: cover;
+    background: #d0efed;
+    opacity: 0.6;
+}
+
+.popular .course-item .info {
+    position: absolute;
+    top: calc(325px - 17px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 18px 25px 29px;
+    width: 325px;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+
+.popular .course-item .title a {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.67;
+}
+
+.popular .price {
+    margin-top: 16px;
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.popular .price span {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.popular .course-item .desc {
+    margin-top: 6px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.popular .course-meta {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    color: #9da6a5;
+}
+
+.course-meta span:nth-of-type(2) {
+    margin-right: 10px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: #1ebfc1;
+    border-radius: 50%;
+    margin-right: 10px;
 }
