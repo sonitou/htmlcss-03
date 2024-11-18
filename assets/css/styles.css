@@ -42,6 +42,7 @@ a {
     font-size: 1.6rem;
     text-align: center;
     color: #ffffff;
+    transition: opacity 0.3s ease;
 }
 
 .btn:hover {
@@ -65,7 +66,6 @@ a {
 /* ========== Header ========== */
 .header {
     background: #fff;
-    height: 100vh;
 }
 
 .header.fixed {
@@ -123,4 +123,199 @@ a {
 .header .sign-up-btn:hover {
     background: var(--primary-color);
     color: #fff;
+}
+
+/*========== Hero ==========  */
+.hero {
+    padding: 42px 0 79px; /*vì padding 8px của .nav a nên 65 - 8 */
+    background: #fff;
+}
+
+.hero .body {
+    display: flex;
+    /* align-items: center;
+    justify-content: space-between; */
+}
+
+/* Hero left */
+.hero .content-block {
+    width: 51%;
+    padding: 93px 71px 0 0;
+}
+
+.hero .badge {
+    color: #767e7e;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.heading {
+    color: #0d1111;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.heading.lv1 {
+    margin-top: 18px;
+    font-size: 6.2rem;
+    line-height: 1.16;
+}
+
+.hero .desc {
+    margin-top: 46px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78; /* 177.778% */
+}
+
+.hero .cta-group {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.hero .hero-cta {
+    line-height: 38px;
+    border-radius: 14px;
+}
+
+.hero .plays {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    border: none;
+    background: transparent; /* nhìn trong suốt */
+    cursor: pointer;
+}
+
+.hero .plays .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+/* Hero right */
+.hero .media-block {
+    position: relative;
+    width: 49%;
+}
+
+.hero .media-block .img {
+    display: block;
+    width: 576px;
+    height: 631px;
+    background: #acf1f4;
+    object-fit: cover;
+}
+
+.media-block .course-card {
+    position: absolute;
+    width: 157px;
+    padding: 17px;
+    top: 27%;
+    left: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.course-card .title {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.67;
+    margin-left: 16px;
+}
+
+.media-block .schedule-card {
+    position: absolute;
+    bottom: 46px;
+    left: -65px;
+    padding: 16px 25px 23px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-card .title {
+    text-align: center;
+    margin-bottom: 16px;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.67;
+}
+
+.schedule-card .bars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.schedule-card .bar {
+    width: 74px;
+    height: 6px;
+    background: linear-gradient(to right, rgba(251, 152, 153, 1), #fff);
+    border-radius: 3px;
+}
+.schedule-card .bar:last-child {
+    margin-top: 6px;
+    width: 26px;
+    height: 6px;
+    background: #edf1f5;
+}
+
+.hero .avatar-block {
+    position: absolute;
+    bottom: 41px;
+    right: 45px;
+    border-radius: 24px;
+    padding: 17px 35px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px rgba(0, 0, 0, 0.05);
+}
+
+.hero .avatar-block .title {
+    color: #0d1111;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.hero .avatar-group {
+    display: flex;
+    justify-content: center;
+}
+
+.hero .avatar {
+    margin-top: 8px;
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: -7px;
+}
+
+.hero .avatar-more {
+    width: 33px;
+    height: 33px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
